@@ -1,0 +1,44 @@
+.our-services-section{
+  background-color: #f7f7fa;
+  padding: 30px;
+}
+.header-label{
+  font-size: 40px;
+  color: #041250;
+  font-weight: bolder;
+  text-align: center;
+}
+.services-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding:50px;
+}
+.service-card{
+  border: 1px rgb(197, 197, 197) solid;
+  padding: 10px 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+.service-icon{
+  width: 60px;
+}
+.services-name{
+  font-size: 20px;
+  font-weight: bold;
+  color:#041250 ;
+}
+.services-description{
+  color:#666870 ;
+}
+@media(max-width: 680px){
+  .services-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 480px){
+  .services-container{
+    grid-template-columns: 1fr;
+    padding: 5px 10px;
+  }
+}
