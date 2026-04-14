@@ -2,12 +2,7 @@
   background-color: #f7f7fa;
   padding: 30px;
 }
-.header-label{
-  font-size: 40px;
-  color: #041250;
-  font-weight: bolder;
-  text-align: center;
-}
+
 .services-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -30,6 +25,11 @@
 }
 .services-description{
   color:#666870 ;
+}
+@media(max-width: 900px) {
+  .services-container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 @media(max-width: 680px){
   .services-container{
