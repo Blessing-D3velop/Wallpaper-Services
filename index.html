@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="Styles/services.css">
     <link rel="stylesheet" href="Styles/shared.css">
     <link rel="stylesheet" href="Styles/our-work.css">
+    <link rel="stylesheet" href="Styles/about.css">
+    <link rel="stylesheet" href="Styles/contact.css">
+    <link rel="stylesheet" href="Styles/footer.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,18 +23,37 @@
         <h1>Shepard Wallpapers</h1>
       </div>
       <div class="right-section">
-        <nav class="navigation">
-          <p>Home</p>
-          <p>Services</p>
-          <p>Gallery</p>
-          <p>About</p>
-          <p>Contact</p>
-          <button class="quote-button">Get a Quote</button>  
+        <nav class="navigation js-navigation">
+          <p class="home js-home">Home</p>
+          <p class="services js-services">Services</p>
+          <p class="gallarey js-gallery">Gallery</p>
+          <p class="about js-about">About</p>
+          <p class="contact js-contact">Contact</p>
+          <button class="quote-button js-quote-btn">Get a Quote</button>  
         </nav>
         <div class="hamburger">&#9776</div> 
       </div>
     </header>
+
+    <!--Mobile Header-->
+    <div class="mobile-menu js-mobile-menu" id="mobile-menu-id">
+      <div class="mobile-header js-mobile-header">
+        <span class="close-btn js-close-btn">X</span>
+      </div>
+      <nav class="mobile-navigation js-mobile-navigation">
+          <p class="home js-home">Home</p>
+          <p class="services js-services">Services</p>
+          <p class="gallarey js-gallery">Gallery</p>
+          <p class="about js-about">About</p>
+          <p class="contact js-contact">Contact</p>
+          <button class="quote-button js-quote-btn">Get a Quote</button> 
+      </nav>
+
+    </div>
+
     <main class="main-container">
+
+      <!--home-section-->
       <section class="home-page">
         <div class="home-page-image-container">
           <img src="Images & Icons/Images/PICTLAV0101.webp" alt="home-page-image" class="home-page-wallpaper-image">
@@ -50,13 +72,14 @@
         </div>
       </section>
 
-
+      <!--Service Section-->
       <section class="our-services-section">
         <p class="header-label">Our Services</p>
         <div class="services-container js-services-container">
         </div>
       </section>
 
+      <!--Gallery section-->
       <section class="our-work-section">
         <p class="header-label">Our Work</p>
         <p class="our-work-description">Real transformations that speak for themselves</p>
@@ -69,8 +92,162 @@
           <img src="Images & Icons/Images/Our-Work-Section-Images/Screenshot 2026-04-14 204922.png" alt="Work image" class="work-image">
         </div>
       </section>
+
+      <!--About Section-->
+      <section class="about-section">
+        <div class="about-image-container">
+          <img src="Images & Icons/Images/Our-Work-Section-Images/Screenshot 2026-04-14 204844.png" alt="About Image" class="about-image">
+        </div>
+
+        <div class="about-info-container">
+          <p class="about-small-title">About Us</p>
+
+          <h2 class="about-main-title">
+            Bringing Walls To Life With Premium Wallpaper Designs
+          </h2>
+
+          <p class="about-description">
+            Shepard Wallpapers specializes in professional wallpaper installation
+            services across South Africa. We transform homes, offices, bedrooms,
+            lounges, and commercial spaces with modern and elegant wallpaper finishes.
+          </p>
+
+          <p class="about-description">
+            Our mission is to deliver high-quality workmanship, attention to detail,
+            and beautiful interior transformations that leave lasting impressions.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-box">
+              <h3>200+</h3>
+              <p>Projects Completed</p>
+            </div>
+
+            <div class="stat-box">
+              <h3>15+</h3>
+              <p>Years Experience</p>
+            </div>
+
+            <div class="stat-box">
+              <h3>100%</h3>
+              <p>Client Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--contact section-->
+      <section class="contact-section">
+
+        <div class="contact-info-container">
+
+          <p class="contact-small-title">Contact Us</p>
+
+          <h2 class="contact-main-title">
+            Let’s Transform Your Space Together
+          </h2>
+
+          <p class="contact-description">
+            Ready to upgrade your walls with premium wallpaper installation?
+            Contact Shepard Wallpapers today for professional and affordable services.
+          </p>
+
+          <div class="contact-details">
+
+            <div class="contact-card">
+              <h3> Phone & WhatsApp</h3>
+
+              <a href="tel:+27743145988" class="contact-link">
+                Call: +27 74 314 5988
+              </a>
+
+              <a href="https://wa.me/27743145988" target="_blank" class="contact-link">
+                WhatsApp: +27 74 314 5988
+              </a>
+            </div>
+
+            <div class="contact-card">
+              <h3>Location</h3>
+              <p>Serving All Over South Africa</p>
+            </div>
+
+            <div class="contact-card">
+              <h3> Availability</h3>
+              <p>Monday - Saturday</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="contact-form-container">
+
+          <input type="text" placeholder="Your Name">
+
+          <input type="email" placeholder="Your Email">
+
+          <textarea placeholder="Your Message"></textarea>
+
+          <button class="contact-button">
+            Send Message
+          </button>
+
+        </div>
+
+      </section>
+
+      <!--footer-->
+      <footer class="footer">
+
+        <div class="footer-container">
+
+          <div class="footer-brand">
+            <h2>Shepard Wallpapers</h2>
+
+            <p>
+              Professional wallpaper installation services transforming
+              homes and businesses across South Africa.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+
+            <p>Home</p>
+            <p>Services</p>
+            <p>Gallery</p>
+            <p>About</p>
+            <p>Contact</p>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact</h3>
+
+            <a href="tel:+27743145988">
+              +27 74 314 5988
+            </a>
+
+            <a href="https://wa.me/27743145988" target="_blank">
+              WhatsApp Us
+            </a>
+
+            <p> South Africa</p>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © 2026 Shepard Wallpapers. All Rights Reserved.
+          </p>
+        </div>
+
+      </footer>
+
     </main>
     <script src="header.js"></script>
     <script type="module" src="Scripts/home-section.js"></script>
+    <script src="Scripts/header.js"></script>
+    <script src="Scripts/contact.js"></script>
   </body>
 </html>

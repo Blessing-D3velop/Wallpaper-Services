@@ -20,3 +20,20 @@ const renderServices = (servicesData) =>{
   });
 }
 renderServices(servicesData);
+
+
+
+// View Our Work Buttons
+const viewWorkButtons = document.querySelectorAll('.view-our-work-button');
+
+const gallerySection = document.querySelector('.our-work-section');
+
+viewWorkButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    gallerySection.scrollIntoView({
+      behavior: 'smooth'
+    });
+
+    mobileMenu.classList.remove('active');
+  });
+});
